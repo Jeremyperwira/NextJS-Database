@@ -12,6 +12,7 @@ export default function SideNav() {
       >
         <div className="w-32 text-white md:w-40">
           <AcmeLogo />
+          <h1> Acme Cek Harga Nasional/Local</h1>
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
