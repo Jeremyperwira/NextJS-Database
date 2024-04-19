@@ -2,15 +2,18 @@ import { Card } from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import {  fetchRevenue, 
+import {  //fetchRevenue, dihapus karena udah di parent dashboard//
           fetchLatestInvoices,
           fetchCardData
         } from '@/app/lib/data';
  //Fetching data for <RevenueChart/> Import dulu , baru di call di compenent
 
+import { Suspense } from 'react';
+import { RevenueChartSkeleton } from '@/app/ui/skeletons';
+
  
 export default async function Page() {
-  const revenue = await fetchRevenue(); 
+  // const revenue = await fetchRevenue();  Di hapus udeh beda parent coy
   const latestInvoices = await fetchLatestInvoices();
   const {
     numberOfInvoices,
@@ -38,7 +41,9 @@ export default async function Page() {
         />
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        <RevenueChart revenue={revenue}  />
+        <Suspense fallback={<RevenueChartSkeleton />}>
+            <RevenueChart />
+          </Suspense>
         <LatestInvoices latestInvoices={latestInvoices} />
       </div>
     </main>
