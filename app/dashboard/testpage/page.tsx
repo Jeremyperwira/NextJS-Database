@@ -14,24 +14,40 @@
 // export default async function Page() {
 //   const data = await getData()
  
-  return <main>
-    <h1>Test API</h1>
-    <p>*Tergantung format API JSON kalo array/nested array pake .map()</p>
-{/*     
-    <div>
-      {Object.keys(data.nasional).map((category) => (
-        <div className="" key={category}>
-          <h2 className="font-bold">{category}</h2>
-          <ul>
-            {Object.entries(data.nasional[category]).map(([product, details]) => (
-              <li key={product}>
-                <p>Product: {product}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div> */}
+//   return <main>
+//     <h1>Test API</h1>
+//     <p>*Tergantung format API JSON kalo array/nested array pake .map()</p>
+    
+//     <div>
+//       {Object.keys(data.nasional).map((category) => (
+//         <div className="text-bold" key={category}>
+//           <h2>{category}</h2>
+//           <ul>
+//             {Object.entries(data.nasional[category]).map(([product, details]) => (
+//               <li key={product}>
+//                 <p>Product: {product}</p>
+//                 <ul>
+//                   <li>ID: {data.id}</li>
+//                   <li>
+//                     Harga:{" "}
+//                     {Object.entries(data)
+//                       .filter(([key]) => key.startsWith("harga"))
+//                       .map(([key, value]) => (
+//                         <span key={key}>{key.slice(5)}: {value}</span>
+//                       ))}
+//                   </li>
+//                   <li>Penjualan: {data.penjualan}</li>
+//                 </ul>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//       ))}
+//     </div>
   
-  </main>
+//   </main>
+// }
+
+export default function Page() {
+  return <p>Api Error</p>;
 }
