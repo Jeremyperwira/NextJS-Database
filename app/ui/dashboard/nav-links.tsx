@@ -6,6 +6,9 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
   ComputerDesktopIcon,
+  GlobeAsiaAustraliaIcon,
+  MapIcon,
+  
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -14,18 +17,20 @@ import clsx from 'clsx';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Harga Nasional', 
+  { name: 'Beranda', 
     href: '/dashboard', 
   
     icon: HomeIcon },
   {
-    name: 'Invoices',
+    name: 'Harga Provinsi',
     href: '/dashboard/invoices',
-    icon: DocumentDuplicateIcon,
+    icon: GlobeAsiaAustraliaIcon,
   },
-  { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Harga Wilayah', 
+    href: '/dashboard/customers', 
+    icon: MapIcon },
   {
-    name: 'Test',
+    name: 'API Test',
     href: '/dashboard/testpage',
     icon: ComputerDesktopIcon,
   },
@@ -43,9 +48,9 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-green-200 hover:text-grey-100 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium text-black hover:bg-green-200 hover:text-green-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
-                'bg-green-100 text-green-600': pathname === link.href,
+                'bg-green-900 text-white': pathname === link.href,
               },
             )}
             >
