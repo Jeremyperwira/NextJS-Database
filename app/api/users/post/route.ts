@@ -4,40 +4,22 @@ const GET = () => {
     return Response.json ({
 
         "nasional": {
-            "bawang":{
+            "Bawang":{
                 "id" : "001",
-                "harga-1" : "Rp 5000",
-                "harga0" : "Rp 6500",
+                "harga-1" : "Rp 6000",
+                "harga0" : "Rp 9500",
                 "penjualan" : "1000"
             },
     
-            "tomat":{
-                "id" : "001",
+            "Tomat":{
+                "id" : "002",
                 "harga-1" : "Rp 5000",
-                "harga0" : "Rp 6500",
-                "penjualan" : "1000"
+                "harga0" : "Rp 8500",
+                "penjualan" : "4000"
             },
     
-            "gula":{
-                "id" : "001",
-                "harga-1" : "Rp 5000",
-                "harga0" : "Rp 6500",
-                "penjualan" : "1000"
-            },
-    
-            "cabai":{
-                "id" : "001",
-                "harga-1" : "Rp 5000",
-                "harga0" : "Rp 6500",
-                "penjualan" : "1000"
-            },
-    
-            "padi":{
-                "id" : "001",
-                "harga-1" : "Rp 5000",
-                "harga0" : "Rp 6500",
-                "penjualan" : "10000"
-            }}
+            
+        }
 
     })
            

@@ -16,10 +16,22 @@ export default async function Page() {
  
   return <main>
     <h1>Test API</h1>
-    <a> *Tergantung format API JSON kalo array/nested array pake .map()</a>
-  
+    <p>*Tergantung format API JSON kalo array/nested array pake .map()</p>
+    
     <div>
-      
+      {Object.keys(data.nasional).map((category) => (
+        <div className="" key={category}>
+          <h2 className="font-bold">{category}</h2>
+          <ul>
+            {Object.entries(data.nasional[category]).map(([product, details]) => (
+              <li key={product}>
+                <p>Product: {product}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
+  
   </main>
 }
