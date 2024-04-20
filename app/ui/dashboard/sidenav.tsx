@@ -25,7 +25,7 @@ export default function SideNav() {
             /> */}
 
           <p className={`${lusitana.className} font-bold text-xl text-white md:text-3xl md:leading-normal `}> PasarKu</p>
-          <h1 className='sm:w-48 lg:w-108 text-sm hover:text-green-100'> Selamat Datang, [user.name] Akses melalui Panel dibagian kiri</h1>
+          <h1 className='sm:w-48 lg:w-108 text-sm hover:text-green-100'> Selamat Datang, [user.name] Akses Informasi terbaru terkait harga secara langsung.</h1>
         </div>
       </Link>
       
