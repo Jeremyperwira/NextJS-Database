@@ -23,7 +23,7 @@ export default function Page() {
         alt="Screenshots of the dashboard project showing desktop version"
       />
           {/* <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"/> */}
-            <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`} >
+            <p className={`${lusitana.className}  text-xl text-grey-200 md:text-3xl md:leading-normal`} >
             Selamat Datang di <strong>PasarKu.</strong> Pantau harga di seluruh pasar secara real time melalui{' '}
             <a href="https://panelharga.badanpangan.go.id/" className="text-green-900">
               Badan Pangan Nasional
@@ -41,7 +41,10 @@ export default function Page() {
             href="/dashboard"
             className="flex items-center gap-5 self-start rounded-lg bg-green-900 px-6 py-3 text-sm font-medium text-white transition-colors transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-500 md:text-base"
           >
-            <span >Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+            <div className='animate-typing overflow-hidden whitespace-nowrap flex '>
+
+              <span className=''>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+            </div>
           </Link>
           {/* <button className='transistion ease-in-out delay-150 bg-blue-500'>
 
