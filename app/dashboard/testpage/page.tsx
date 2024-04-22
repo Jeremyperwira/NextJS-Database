@@ -11,14 +11,14 @@
 //   return res.json()
 // }
  
-// export default async function Page() {
+export default async function Page() {
 //   const data = await getData()
  
-//   return <main>
-//     <h1>Test API</h1>
-//     <p>*Tergantung format API JSON kalo array/nested array pake .map()</p>
-//     </main>
-// }
+  return <main>
+    <h1>Test API</h1>
+    <p>*Tergantung format API JSON kalo array/nested array pake .map()</p>
+    </main>
+}
     
     
 
