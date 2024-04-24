@@ -33,7 +33,7 @@ export default function SideNav() {
           <div className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-green-100 hover:text-green-600 md:flex-none md:justify-start md:p-2 md:px-3">
             {/* <PowerIcon className="w-6" /> */}
             <UserButton></UserButton>
-            <div className="${lusitana.className} hidden md:block">Akun</div>
+            <div className="${lusitana.className} hidden md:block">Kelola Akun</div>
           </div>
 {/* Build In Signed Out */}
 
