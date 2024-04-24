@@ -1,4 +1,4 @@
-import { ClerkProvider, SignIn, SignUp } from '@clerk/nextjs'
+import { SignUp } from '@clerk/nextjs'
 
 
 export default function Page() {

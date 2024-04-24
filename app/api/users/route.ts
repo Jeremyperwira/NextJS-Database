@@ -5,9 +5,14 @@
 
 // export async function GET(request: Request) {}
 
+import { auth } from "@clerk/nextjs/server";
+
+
+/*  */
 const GET = async () => {
-    const response = await fetch ('https://jsonplaceholder.typicode.com/todos/1');
-    const parsedData = await response.json();
-    return Response.json (parsedData);
+  const { getToken } = auth();
+   const template = 'test';
+   const token = await getToken({ template })
+   return Response.json({ token })
 }
 export {GET}
